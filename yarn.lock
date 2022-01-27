@@ -1036,7 +1036,7 @@
     eslint-plugin-react-hooks "^4.2.0"
     prettier "^2.0.0"
 
-"@corva/ui@latest":
+"@corva/ui@^0.22.0":
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/@corva/ui/-/ui-0.22.0.tgz#802485fe955c770082d0e610b01aab95bcaebd27"
   integrity sha512-/UetCsKIh6YtU61EoueIpbE34sL1SnR9cAIxK49LY5ZkOFGAHGwaOT4lUui0tcGqSVvW3LtHuT2BaQmDsuSzzQ==

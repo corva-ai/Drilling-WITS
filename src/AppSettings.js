@@ -1,7 +1,7 @@
 import { Checkbox, FormControlLabel } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
-import { DEFAULT_SETTINGS } from './constants';
+import { DATASETS } from './constants';
 
 function AppSettings({
   settings: apiSettings,
@@ -11,7 +11,7 @@ function AppSettings({
   // user,
   // company,
 }) {
-  const settings = { ...DEFAULT_SETTINGS, ...apiSettings };
+  const settings = { ...DATASETS, ...apiSettings };
   return (
     <div>
       <FormControlLabel
@@ -33,7 +33,7 @@ AppSettings.propTypes = {
   company: PropTypes.shape({}),
   onSettingChange: PropTypes.func.isRequired,
   settings: PropTypes.shape({
-    isExampleCheckboxChecked: PropTypes.bool,
+    isExampleCheckboxChecked: PropTypes.bool
   }).isRequired,
   user: PropTypes.shape({}),
 };
