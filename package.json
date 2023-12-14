@@ -1,31 +1,44 @@
 {
   "name": "DrillingWITS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config=./config-overrides.js --mode production",
     "start": "webpack-dev-server --config=./config-overrides.js --open --mode development",
-    "zip": "create-corva-app --zip ui",
-    "lint": "eslint --cache ./src/"
+    "zip": "create-corva-app zip .",
+    "lint": "eslint --cache ./src/",
+    "release": "create-corva-app release .",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
+    "@corva/dc-platform-shared": "latest",
+    "@corva/eslint-config-browser": "latest",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^13.2.1",
+    "babel-jest": "^27.4.2",
+    "babel-preset-react-app": "^10.0.1",
+    "eslint": "7.32.0",
+    "jest": "^27.4.3",
+    "jest-watch-typeahead": "^1.0.0",
     "postcss-loader": "4.1.0"
   },
   "dependencies": {
-    "@corva/ui": "^0.22.0",
+    "@corva/ui": "latest",
     "@material-ui/core": "4.11.2",
     "@material-ui/icons": "4.9.1",
     "@material-ui/lab": "4.0.0-alpha.57",
     "@material-ui/pickers": "3.2.10",
     "classnames": "2.2.6",
-    "corva-convert-units": "1.10.17",
+    "corva-convert-units": "1.10.33",
     "highcharts": "8.1.2",
     "highcharts-react-official": "2.2.2",
     "lodash": "^4.17.4",
     "mapbox.js": "3.2.1",
-    "moment": "2.23.0",
-    "moment-timezone": "0.5.23",
-    "prop-types": "^15.6.1",
+    "moment": "2.29.4",
+    "moment-timezone": "0.5.43",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }
